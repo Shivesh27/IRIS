@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(244, 97, 151);
+}
+
+.control-container {
+    z-index: 1000;
+    position: absolute;
+    bottom: -175px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.active {
+    bottom: -100px;
+}
+
+.toggle {
+    height: 20px;
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 253, 247,0.4);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    cursor: pointer;
+    text-align: center;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+}

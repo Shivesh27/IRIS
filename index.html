@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="control-container" id="control-container">
+        <div class="toggle" onclick="document.getElementById('control-container').classList.toggle('active')"> ^ </div>
+        <div class="sliders" id="sliders">
+            <input type="range" id="angle" name="angle" min="1" max="360" value = "90"/>
+        <input type="range" id="stroke" name="stroke" min="20" max="200" value = "40"/>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
