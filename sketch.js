@@ -4,10 +4,12 @@ var rad;
 var ani_fac;
 var angle;
 var str;
+var clr;
 
 var angleInput;
 var strokeInput;
 var radInput;
+var clrInput;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   theta = 0;
@@ -15,18 +17,21 @@ function setup() {
   ani_fac = 0.001;
   angle = PI/2;
   str = 40;
+  clr = "#f46197"
 
   angleInput = document.getElementById("angle");
   strokeInput = document.getElementById("stroke");
   radInput = document.getElementById("rad");
+  clrInput = document.getElementById("bck-color");
   angleInput.oninput = function() { angle = radians(angleInput.value)}
   strokeInput.oninput = function() { str = strokeInput.value}
   radInput.oninput = function() { rad = radInput.value}
+  clrInput.oninput = function() { clr = clrInput.value; document.body.style.background = clr;}
 
 }
 
 function draw() {
-  background('rgb(244, 97, 151)');
+  background(String(clr));
   
   stroke('rgba(255, 253, 247,0.2)');
   strokeWeight(str)
@@ -47,3 +52,8 @@ function draw() {
   theta += ani_fac
   
 }
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
+

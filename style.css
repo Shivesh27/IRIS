@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-html, body {
+body {
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -23,7 +23,7 @@ html, body {
 }
 
 .active {
-    bottom: -100px;
+    bottom: -80px;
 }
 
 .toggle {
@@ -41,4 +41,10 @@ html, body {
     flex-direction: column;
     gap: 10px;
     height: 120px;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
