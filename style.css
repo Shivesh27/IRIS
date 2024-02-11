@@ -13,7 +13,7 @@ html, body {
 .control-container {
     z-index: 1000;
     position: absolute;
-    bottom: -175px;
+    bottom: -205px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -40,5 +40,5 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 100px;
+    height: 120px;
 }

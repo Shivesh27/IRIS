@@ -7,6 +7,7 @@ var str;
 
 var angleInput;
 var strokeInput;
+var radInput;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   theta = 0;
@@ -17,8 +18,10 @@ function setup() {
 
   angleInput = document.getElementById("angle");
   strokeInput = document.getElementById("stroke");
+  radInput = document.getElementById("rad");
   angleInput.oninput = function() { angle = radians(angleInput.value)}
   strokeInput.oninput = function() { str = strokeInput.value}
+  radInput.oninput = function() { rad = radInput.value}
 
 }
 
